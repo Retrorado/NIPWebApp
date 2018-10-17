@@ -23,8 +23,8 @@ namespace NIPWebAppBase.Acions
         {
             Request request = new Request()
             {
-                HttpHeaders = valueToFind,
-                SearchedData = httpHeaders
+                HttpHeaders = httpHeaders,
+                SearchedData = valueToFind
             };
 
             db.Requests.Add(request);
